@@ -4,3 +4,15 @@ NgMoudle是一个装饰器函数，它接收衣蛾用来描述模块属性的元
    imports:  本模块声明组件需要的类所在的模块*(也就是依赖的模块和库)
    providers: 服务  (依赖注入)
    bootstrap:  根模块
+   
+   @Component({
+     selector:    'hero-list',
+     templateUrl: './hero-list.component.html',
+     providers:  [ HeroService ]
+   })
+   export class HeroListComponent implements OnInit {//这是一个typeScript类 
+   //直到我们告诉 Angular 它是一个组件。
+   //要告诉 Angular HeroListComponent是个组件，只要把元数据附加到这个类。
+   //在TypeScript中，我们用装饰器 (decorator) 来附加元数据。 下面就是HeroListComponent的一些元数据。
+   /* . . . */
+   }
