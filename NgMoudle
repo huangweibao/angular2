@@ -1,0 +1,6 @@
+NgMoudle是一个装饰器函数，它接收衣蛾用来描述模块属性的元数据对象------其中最重要的属性是：
+   declarations： 模块的视图类  (视图、 管道、 指令)
+   exports:   declarations的子类 可用于其它模块的组件模板
+   imports:  本模块声明组件需要的类所在的模块*(也就是依赖的模块和库)
+   providers: 服务  (依赖注入)
+   bootstrap:  根模块
